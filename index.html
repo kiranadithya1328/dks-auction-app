@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DK'S BADMINTON CLUB - Official Auction App Download</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Download the official DK's Badminton Club Android Auction App. Manage live auctions, teams, players, and secure logins with real-time database synchronization.">
+    <meta name="keywords" content="DK Badminton Club, Badminton Auction App, Android APK Download, Sports Auction Management, Player Auction App, Firebase Realtime Database">
+    <meta name="author" content="VERTEX WEB STUDIO">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="./">
+    <meta property="og:title" content="DK'S BADMINTON CLUB - Official Auction App">
+    <meta property="og:description" content="Manage badminton auctions digitally with real-time updates, player management, and secure Firebase authentication. Download the official APK now.">
+    <meta property="og:image" content="logo.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="DK'S BADMINTON CLUB - Official Auction App">
+    <meta property="twitter:description" content="Manage badminton auctions digitally with real-time updates, player management, and secure Firebase authentication. Download the official APK now.">
+    <meta property="twitter:image" content="logo.png">
+
+    <!-- Favicon (Fallback to Logo) -->
+    <link rel="icon" type="image/png" href="logo.png">
+
+    <!-- Google Fonts - Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome for Premium Vector Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader" class="preloader">
+        <div class="loader-container">
+            <div class="loader-shuttle">
+                <i class="fa-solid fa-shuttlecock"></i>
+            </div>
+            <div class="loader-spinner"></div>
+            <p>Loading Club Experience...</p>
+        </div>
+    </div>
+
+    <!-- Header / Sticky Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="navbar-container">
+            <a href="#home" class="logo-area">
+                <img src="logo.png" alt="DK's Badminton Club Logo" class="nav-logo" id="navLogo">
+                <span class="logo-text">DK'S <span>BADMINTON CLUB</span></span>
+            </a>
+            
+            <nav class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#screenshots" class="nav-link">Screenshots</a>
+                <a href="#download" class="nav-link">Download</a>
+                <a href="#developer" class="nav-link">Developer</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="DK-Auction-v1.0.apk" download class="btn btn-nav-download">
+                    <i class="fa-solid fa-download"></i> Get App
+                </a>
+                <button class="mobile-menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-bg-accent-left"></div>
+            <div class="hero-bg-accent-right"></div>
+            <div class="container hero-container">
+                <div class="hero-content animate-slide-right">
+                    <span class="badge"><i class="fa-solid fa-circle-check"></i> Official Release</span>
+                    <h1 class="hero-title">
+                        DK'S BADMINTON CLUB
+                        <span class="highlight">Official Auction App</span>
+                    </h1>
+                    <p class="hero-subtitle">The official Android application for managing badminton auctions digitally.</p>
+                    <p class="hero-description">
+                        Experience live auctions, secure login, player management, team management and real-time updates with a fast and modern Android application.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="DK-Auction-v1.0.apk" download class="btn btn-download-apk" id="mainDownloadBtn">
+                            <span class="btn-icon"><i class="fa-solid fa-arrow-down-to-bracket"></i></span>
+                            <span class="btn-text-wrapper">
+                                <span class="btn-text-main">Download APK</span>
+                                <span class="btn-text-sub">DK-Auction-v1.0.apk (20.3 MB)</span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="hero-trust">
+                        <span class="trust-item"><i class="fa-solid fa-shield-halved"></i> Safe & Secure</span>
+                        <span class="trust-item"><i class="fa-solid fa-bolt"></i> Fast Installation</span>
+                        <span class="trust-item"><i class="fa-solid fa-android"></i> Android 8.0+</span>
+                    </div>
+                </div>
+                <div class="hero-mockup animate-slide-left">
+                    <div class="phone-mockup-wrapper">
+                        <div class="phone-mockup">
+                            <div class="phone-speaker"></div>
+                            <div class="phone-camera"></div>
+                            <div class="phone-screen">
+                                <img src="screenshot1.jpg" alt="App Main Screenshot" id="mockupScreenImg">
+                            </div>
+                            <div class="phone-home-indicator"></div>
+                        </div>
+                        <div class="mockup-shadow"></div>
+                        <div class="mockup-floating-element badge-users">
+                            <i class="fa-solid fa-users"></i>
+                            <div>
+                                <span class="num">100%</span>
+                                <span class="lbl">Digital Management</span>
+                            </div>
+                        </div>
+                        <div class="mockup-floating-element badge-db">
+                            <i class="fa-solid fa-cloud-bolt"></i>
+                            <div>
+                                <span class="num">Live</span>
+                                <span class="lbl">Realtime Sync</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- App Information Section -->
+        <section id="app-info" class="app-info-section">
+            <div class="container">
+                <div class="app-info-grid animate-fade-in">
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fa-solid fa-code-branch"></i></div>
+                        <div class="info-label">Version</div>
+                        <div class="info-value">1.0.0</div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fa-solid fa-android"></i></div>
+                        <div class="info-label">Platform</div>
+                        <div class="info-value">Android</div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+                        <div class="info-label">Compatibility</div>
+                        <div class="info-value">Android 8+</div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                        <div class="info-label">Developer</div>
+                        <div class="info-value">VERTEX WEB STUDIO</div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fa-solid fa-trophy"></i></div>
+                        <div class="info-label">Category</div>
+                        <div class="info-value">Sports</div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fa-solid fa-circle-check"></i></div>
+                        <div class="info-label">Status</div>
+                        <div class="info-value text-green">Latest Version</div>
+                    </div>
+                    <div class="info-card col-span-md-2 col-span-lg-1">
+                        <div class="info-icon"><i class="fa-solid fa-calendar-day"></i></div>
+                        <div class="info-label">Last Updated</div>
+                        <div class="info-value" id="today-date">June 21, 2026</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features-section">
+            <div class="container">
+                <div class="section-header animate-fade-in">
+                    <span class="sub-title">App Functionalities</span>
+                    <h2 class="section-title">Premium Auction Features</h2>
+                    <p class="section-desc">Designed specifically to provide a seamless, state-of-the-art auctioning experience for the club organizers, team managers, and players.</p>
+                </div>
+                
+                <div class="features-grid">
+                    <!-- Feature 1 -->
+                    <div class="feature-card animate-slide-up">
+                        <div class="feature-icon-wrapper blue-grad">
+                            <i class="fa-solid fa-gavel"></i>
+                        </div>
+                        <h3>Live Auction</h3>
+                        <p>Experience real-time bidding operations with active countdown timers, bid increases, and instant updates.</p>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div class="feature-card animate-slide-up" style="animation-delay: 0.1s;">
+                        <div class="feature-icon-wrapper gold-grad">
+                            <i class="fa-solid fa-shield-keyhole"></i>
+                        </div>
+                        <h3>Firebase Authentication</h3>
+                        <p>Secure individual login mechanics ensuring authorization checks for team owners and administrators.</p>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div class="feature-card animate-slide-up" style="animation-delay: 0.2s;">
+                        <div class="feature-icon-wrapper blue-grad">
+                            <i class="fa-solid fa-database"></i>
+                        </div>
+                        <h3>Realtime Cloud Database</h3>
+                        <p>All bids, player statuses, and budgets sync instantaneously across all devices via Firebase database services.</p>
+                    </div>
+
+                    <!-- Feature 4 -->
+                    <div class="feature-card animate-slide-up">
+                        <div class="feature-icon-wrapper blue-grad">
+                            <i class="fa-solid fa-user-gear"></i>
+                        </div>
+                        <h3>Player Management</h3>
+                        <p>Register, categorize, search, and track stats of individual players before and during the auction process.</p>
+                    </div>
+
+                    <!-- Feature 5 -->
+                    <div class="feature-card animate-slide-up" style="animation-delay: 0.1s;">
+                        <div class="feature-icon-wrapper gold-grad">
+                            <i class="fa-solid fa-users-gear"></i>
+                        </div>
+                        <h3>Team Management</h3>
+                        <p>Review squad sizes, player distribution lists, remaining points, and active team configurations on the fly.</p>
+                    </div>
+
+                    <!-- Feature 6 -->
+                    <div class="feature-card animate-slide-up" style="animation-delay: 0.2s;">
+                        <div class="feature-icon-wrapper blue-grad">
+                            <i class="fa-solid fa-lock"></i>
+                        </div>
+                        <h3>Secure Login</h3>
+                        <p>Enterprise-grade security rules restrict access to only registered managers, keeping details tamper-proof.</p>
+                    </div>
+
+                    <!-- Feature 7 -->
+                    <div class="feature-card animate-slide-up">
+                        <div class="feature-icon-wrapper blue-grad">
+                            <i class="fa-solid fa-gauge-high"></i>
+                        </div>
+                        <h3>Fast Performance</h3>
+                        <p>Optimized Android package rendering instant view switches, light UI components, and low latency updates.</p>
+                    </div>
+
+                    <!-- Feature 8 -->
+                    <div class="feature-card animate-slide-up" style="animation-delay: 0.1s;">
+                        <div class="feature-icon-wrapper gold-grad">
+                            <i class="fa-solid fa-mobile-button"></i>
+                        </div>
+                        <h3>Responsive Design</h3>
+                        <p>The application interface is fully responsive, optimized for both tablets and Android smartphones.</p>
+                    </div>
+
+                    <!-- Feature 9 -->
+                    <div class="feature-card animate-slide-up" style="animation-delay: 0.2s;">
+                        <div class="feature-icon-wrapper blue-grad">
+                            <i class="fa-solid fa-palette"></i>
+                        </div>
+                        <h3>Professional Sports UI</h3>
+                        <p>Features sleek sports-centric layouts, color indicators, player avatars, and a championship style theme.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Application Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-visual animate-slide-right">
+                        <div class="image-stack">
+                            <div class="image-stack-item image-stack-item-bottom">
+                                <img src="screenshot2.jpg" alt="App Screen Detail Budget">
+                            </div>
+                            <div class="image-stack-item image-stack-item-top">
+                                <img src="screenshot3.jpg" alt="App Screen Detail Player List">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-content animate-slide-left">
+                        <span class="sub-title">Inside The Application</span>
+                        <h2 class="section-title">Modern Auction Administration</h2>
+                        <p class="about-lead">DK's Badminton Club Official Auction App solves the traditional issues of manual auctions by replacing pen-and-paper budgeting with an interactive, instant digital system.</p>
+                        
+                        <ul class="about-bullets">
+                            <li>
+                                <div class="bullet-icon"><i class="fa-solid fa-chart-line"></i></div>
+                                <div>
+                                    <strong>Live Auction Dashboard:</strong> Displays current bidding player details, photo, base points, active bidders, and live status updates.
+                                </div>
+                            </li>
+                            <li>
+                                <div class="bullet-icon"><i class="fa-solid fa-user-lock"></i></div>
+                                <div>
+                                    <strong>Firebase Authentication & Secure Login:</strong> Restricts operational modifications to verified auctioneers and team managers only.
+                                </div>
+                            </li>
+                            <li>
+                                <div class="bullet-icon"><i class="fa-solid fa-people-group"></i></div>
+                                <div>
+                                    <strong>Player & Team Management:</strong> Assigns players to squads automatically and deducts bid amounts from the team's total budget.
+                                </div>
+                            </li>
+                            <li>
+                                <div class="bullet-icon"><i class="fa-solid fa-cloud-arrow-up"></i></div>
+                                <div>
+                                    <strong>Real-Time Updates:</strong> Powered by Firebase Realtime DB, ensuring everyone sees the bid updates within milliseconds without refreshing.
+                                </div>
+                            </li>
+                            <li>
+                                <div class="bullet-icon"><i class="fa-solid fa-mobile-notch"></i></div>
+                                <div>
+                                    <strong>Premium User Interface:</strong> Beautiful modern dashboard elements matching the prestige of DK's Badminton Club events.
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Screenshot Gallery Section -->
+        <section id="screenshots" class="gallery-section">
+            <div class="container">
+                <div class="section-header animate-fade-in">
+                    <span class="sub-title">Application Interface</span>
+                    <h2 class="section-title">Visual Walkthrough</h2>
+                    <p class="section-desc">Get an early look at the professional layouts, screens, and menus designed for the auction players and administrators.</p>
+                </div>
+
+                <!-- Gallery Carousel -->
+                <div class="gallery-carousel-wrapper animate-slide-up">
+                    <button class="carousel-control prev" id="carouselPrev" aria-label="Previous screenshot">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    
+                    <div class="gallery-carousel" id="galleryCarousel">
+                        <div class="carousel-track" id="carouselTrack">
+                            <div class="carousel-slide active">
+                                <div class="gallery-phone-frame">
+                                    <img src="screenshot1.jpg" alt="App Screenshot 1">
+                                </div>
+                            </div>
+                            <div class="carousel-slide">
+                                <div class="gallery-phone-frame">
+                                    <img src="screenshot2.jpg" alt="App Screenshot 2">
+                                </div>
+                            </div>
+                            <div class="carousel-slide">
+                                <div class="gallery-phone-frame">
+                                    <img src="screenshot3.jpg" alt="App Screenshot 3">
+                                </div>
+                            </div>
+                            <div class="carousel-slide">
+                                <div class="gallery-phone-frame">
+                                    <img src="screenshot4.jpg" alt="App Screenshot 4">
+                                </div>
+                            </div>
+                            <div class="carousel-slide">
+                                <div class="gallery-phone-frame">
+                                    <img src="screenshot5.jpg" alt="App Screenshot 5">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="carousel-control next" id="carouselNext" aria-label="Next screenshot">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+
+                    <!-- Indicator dots -->
+                    <div class="carousel-indicators" id="carouselIndicators">
+                        <span class="indicator active" data-slide="0"></span>
+                        <span class="indicator" data-slide="1"></span>
+                        <span class="indicator" data-slide="2"></span>
+                        <span class="indicator" data-slide="3"></span>
+                        <span class="indicator" data-slide="4"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Installation Guide Section -->
+        <section id="install-guide" class="install-section">
+            <div class="container">
+                <div class="section-header animate-fade-in">
+                    <span class="sub-title">Quick Onboarding</span>
+                    <h2 class="section-title">How To Install the APK</h2>
+                    <p class="section-desc">Follow these 6 simple steps to install the official DK's Badminton Club Auction application on your Android device.</p>
+                </div>
+
+                <div class="timeline animate-slide-up">
+                    <div class="timeline-line"></div>
+                    
+                    <!-- Step 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-number">1</div>
+                        <div class="timeline-content">
+                            <h3>Download APK</h3>
+                            <p>Click the <strong>Download APK</strong> button in the Hero section or the Download menu. The file <code>DK-Auction-v1.0.apk</code> will save to your downloads folder.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-number">2</div>
+                        <div class="timeline-content">
+                            <h3>Open APK</h3>
+                            <p>Once completed, locate the downloaded file in your browser's history or file manager, and tap on it to launch the setup package.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="timeline-item">
+                        <div class="timeline-number">3</div>
+                        <div class="timeline-content">
+                            <h3>Allow Unknown Apps</h3>
+                            <p>Android may prompt you to allow installation from unknown sources. Tap on <strong>Settings</strong> and toggle "Allow from this source" for your browser or file manager.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="timeline-item">
+                        <div class="timeline-number">4</div>
+                        <div class="timeline-content">
+                            <h3>Install</h3>
+                            <p>Return to the installer display screen and select the <strong>Install</strong> option. The process will complete in a few moments.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 5 -->
+                    <div class="timeline-item">
+                        <div class="timeline-number">5</div>
+                        <div class="timeline-content">
+                            <h3>Open the Application</h3>
+                            <p>Once installed, select <strong>Open</strong> or look for the DK's Badminton Club logo on your app drawer. Launch the app.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 6 -->
+                    <div class="timeline-item">
+                        <div class="timeline-number">6</div>
+                        <div class="timeline-content">
+                            <h3>Login or Create Account</h3>
+                            <p>Securely sign in with your credentials, or register a new team manager account to begin participating in the live club auction.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Download CTA Section -->
+        <section id="download" class="cta-section">
+            <div class="container">
+                <div class="cta-card animate-fade-in">
+                    <div class="cta-glow-1"></div>
+                    <div class="cta-glow-2"></div>
+                    <div class="cta-content">
+                        <h2>Ready to Auction Digitally?</h2>
+                        <p>Get the latest, stable release of the official application. Safe, lightweight, and optimized for your Android platform.</p>
+                        
+                        <div class="cta-button-group">
+                            <a href="DK-Auction-v1.0.apk" download class="btn btn-download-apk btn-cta-download">
+                                <span class="btn-icon"><i class="fa-solid fa-arrow-down-to-bracket"></i></span>
+                                <span class="btn-text-wrapper">
+                                    <span class="btn-text-main">Download APK</span>
+                                    <span class="btn-text-sub">DK-Auction-v1.0.apk (20.3 MB)</span>
+                                </span>
+                            </a>
+                        </div>
+
+                        <div class="cta-meta">
+                            <span><i class="fa-solid fa-shield-virus"></i> Checked for malware & viruses</span>
+                            <span><i class="fa-solid fa-server"></i> Fast direct download</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Developer Section -->
+        <section id="developer" class="developer-section">
+            <div class="container">
+                <div class="section-header animate-fade-in">
+                    <span class="sub-title">Creator Showcase</span>
+                    <h2 class="section-title">Behind the Engineering</h2>
+                </div>
+
+                <div class="developer-glass-card animate-slide-up">
+                    <div class="dev-logo-container">
+                        <img src="studio-logo.png" alt="Vertex Web Studio Logo" class="dev-studio-logo">
+                    </div>
+                    
+                    <div class="dev-info">
+                        <span class="dev-tag">DEVELOPED BY</span>
+                        <h3 class="dev-name">VERTEX WEB STUDIO</h3>
+                        <p class="dev-subtitle">(Kiran Adithya)</p>
+                        <div class="dev-divider"></div>
+                        <p class="dev-description">
+                            "VERTEX WEB STUDIO develops premium websites, Android applications, Firebase-powered systems and professional digital solutions with modern user experiences."
+                        </p>
+                        <div class="dev-tags">
+                            <span><i class="fa-brands fa-android"></i> Android Native</span>
+                            <span><i class="fa-solid fa-cloud"></i> Firebase Cloud Integration</span>
+                            <span><i class="fa-solid fa-globe"></i> Premium Landing Pages</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="contact-box animate-fade-in">
+                    <div class="contact-header">
+                        <div class="contact-icon"><i class="fa-solid fa-envelope-open-text"></i></div>
+                        <h2>Need Help?</h2>
+                        <p>Having trouble downloading, installing, or logging in? Feel free to contact our development support desk.</p>
+                    </div>
+                    <div class="contact-details-list">
+                        <div class="contact-detail-item">
+                            <span class="label">💬 WhatsApp 1</span>
+                            <a href="https://wa.me/918056163645" target="_blank" class="contact-link">+91 80561 63645 (Kiran Adithya)</a>
+                        </div>
+                        <div class="contact-detail-item">
+                            <span class="label">💬 WhatsApp 2</span>
+                            <a href="https://wa.me/919384220974" target="_blank" class="contact-link">+91 9384220974 (Derek Immanuel)</a>
+                        </div>
+                        <div class="contact-detail-item">
+                            <span class="label">📷 Instagram</span>
+                            <a href="https://www.instagram.com/vertexwebstudio0512?igsh=MW81dnQzaW03dDVvNA==" target="_blank" class="contact-link instagram-link">https://www.instagram.com/vertexwebstudio0512?igsh=MW81dnQzaW03dDVvNA==</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <div class="logo-area">
+                    <img src="logo.png" alt="DK Logo" class="footer-logo">
+                    <span class="logo-text">DK'S <span>BADMINTON CLUB</span></span>
+                </div>
+                <p class="footer-desc">The official digital portal for managing player bidding rosters, team distributions, and real-time live events securely.</p>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="#home">Home</a>
+                <a href="#features">Features</a>
+                <a href="#screenshots">Screenshots</a>
+                <a href="#download">Download</a>
+            </div>
+
+            <div class="footer-divider"></div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2026 DK'S BADMINTON CLUB. All Rights Reserved.</p>
+                <p class="attribution">Designed & Developed by <a href="#developer" class="dev-link">VERTEX WEB STUDIO (Kiran Adithya)</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Scroll back to top">
+        <i class="fa-solid fa-chevron-up"></i>
+    </button>
+
+    <!-- JS Notification Toast Container -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>
